@@ -1,25 +1,41 @@
-#loader .bar {
-    width: 20px;
-    height: 100%;
-    display: inline-block;
-    background-color: blue;
-    animation: loading 1s ease-in-out infinite;
-  }
+body {
+    background-color: #323128;
+}
+
+#loader {
+    width: 60px;
+    height: 20px;
+    background-color: skyblue;
+    position: relative;
+    animation: loading 1s linear infinite;
+}
   
-  @keyframes loading {
+#loader::before,#loader::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: skyblue;
+    position: absolute;
+}
+  
+#loader::before {
+    left: -20px;
+}
+  
+#loader::after {
+    right: -20px;
+}
+  
+@keyframes loading {
     0% {
-      transform: translateX(0);
-    }
-    25% {
-      transform: translateX(50px);
-    }
-    50% {
-      transform: translateX(100px);
-    }
-    75% {
-      transform: translateX(50px);
+      transform: translateX(-100px);
     }
     100% {
-      transform: translateX(0);
+      transform: translateX(100px);
     }
-  }
+}
+  
+#loader {
+    animation: loading 10s;
+}
+  
