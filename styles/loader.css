@@ -1,0 +1,66 @@
+body {
+    background-color: #558b6e;
+}
+ 
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: loading 10s;
+  }
+  
+.loader,
+.loader::before,
+.loader::after {
+    background: #b4d2e7;
+    width: 1em;
+    height: 4em;
+    color: #ecce8e;
+    border-radius: 15px;
+    font-size: 2vw;
+    transform: translateZ(0);
+    animation: load1 1s infinite ease-in-out;
+}
+  
+.loader::before,
+.loader::after {
+    position: absolute;
+    top: 0;
+    content: "";
+}
+  
+.loader::before {
+    left: -1.5em;
+    animation-delay: -0.32s;
+}
+  
+.loader::after {
+    left: 1.5em;
+}
+  
+@keyframes loading {
+    0% {
+      visibility: visible;
+    }
+    100% {
+      visibility: hidden;
+    }
+}
+  
+@keyframes load1 {
+    0%,
+    80%,
+    100% {
+      box-shadow: 0 0;
+      height: 4em;
+    }
+    40% {
+      box-shadow: 0 -2em;
+      height: 5em;
+    }
+} 
+
+
+
+ 
