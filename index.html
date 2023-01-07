@@ -7,10 +7,10 @@
     <title>Text Converter</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/loader.css" />
+    <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
     <!-- Loader waiting page -->
-
     <div class="loader">
       <div></div>
       <div></div>
@@ -18,19 +18,34 @@
     </div>
 
     <!-- Header page -->
-
     <header>
       <h1>Nicolás Vega</h1>
     </header>
 
     <!-- Main content -->
-
     <main class="main__container">
-      <section class="section__input__textarea">
-        <textarea name="input__text" class="section__textarea" cols="30" rows="10"></textarea>
+      <!-- Left column -->
+      <section class="firstSection__input__textarea">
+        <textarea
+          name="input__text"
+          class="section__textarea"
+          cols="30"
+          rows="15"
+          placeholder="Escriba o peque aquí su texto"
+        ></textarea>
+
+        <!-- Alert -->
+        <div class="firstSection__alert"></div>
+        <figure>
+          <img src="vector/Vector.svg" alt="Simbolo de exclamación" />
+        </figure>
+        <p>Solo letras minúsculas y sin acentos</p>
       </section>
+      <!-- Right column -->
       <section class="section__input__textarea">
-        <textarea name="input__text" class="section__textarea" cols="30" rows="10"></textarea>
+        <textarea name="input__text" class="section__textarea" cols="30" rows="15"> </textarea>
+        <h3>Ningún mensaje fue encontrado</h3>
+        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
       </section>
     </main>
 
