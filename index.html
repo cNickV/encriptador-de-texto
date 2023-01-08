@@ -14,56 +14,65 @@
     </style>
   </head>
   <body>
-    <!-- Loader waiting page -->
-    <div class="loader">
-      <div></div>
-      <div></div>
-      <div></div>
+    <div class="container__grid">
+      <!-- Loader waiting page -->
+      <div class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <!-- Header page -->
+      <header class="header">
+        <nav class="header__nav">
+          <h1 class="header__nav__logo">Nicolas Vega.</h1>
+        </nav>
+      </header>
+
+      <!-- Main content -->
+      <main class="main">
+        <!-- Left column -->
+        <section class="main__section main__section--left">
+          <textarea
+            name="input__text"
+            class="main__section__textarea"
+            cols="30"
+            rows="15"
+            placeholder="Escriba o peque aquí su texto"
+          >
+          </textarea>
+
+          <!-- Alert -->
+          <div class="main__section__alert"></div>
+          <figure>
+            <img src="vector/Vector.svg" alt="Simbolo de exclamación" />
+          </figure>
+          <p>Solo letras minúsculas y sin acentos</p>
+        </section>
+        <!-- Right column -->
+        <section class="main__section main__section--right">
+          <textarea name="input__text" class="main__section__textarea" cols="30" rows="15"> </textarea>
+          <h3>Ningún mensaje fue encontrado</h3>
+          <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        </section>
+      </main>
+
+      <!-- Footer content -->
+
+      <footer class="footer">
+        <span class="footer__copyright"> Nicolás Vega &copy; 2023 </span>
+        <a href="https://www.linkedin.com/in/nicolas-vega-dev/" target="_blank" class="footer__link">
+          <figure class="footer__link__icon">
+            <img src="vector/linkedin.svg" alt="logo LinkedIn" />
+          </figure>
+        </a>
+        <a href="https://github.com/cNickV" target="_blank" class="footer__link">
+          <figure class="footer__link__icon">
+            <img src="vector/github.svg" alt="logo github" />
+          </figure>
+        </a>
+      </footer>
     </div>
-
-    <!-- Header page -->
-    <header>
-      <h1>Nicolás Vega</h1>
-    </header>
-
-    <!-- Main content -->
-    <main class="main__container">
-      <!-- Left column -->
-      <section class="firstSection__input__textarea">
-        <textarea
-          name="input__text"
-          class="section__textarea"
-          cols="30"
-          rows="15"
-          placeholder="Escriba o peque aquí su texto"
-        ></textarea>
-
-        <!-- Alert -->
-        <div class="firstSection__alert"></div>
-        <figure>
-          <img src="vector/Vector.svg" alt="Simbolo de exclamación" />
-        </figure>
-        <p>Solo letras minúsculas y sin acentos</p>
-      </section>
-      <!-- Right column -->
-      <section class="section__input__textarea">
-        <textarea name="input__text" class="section__textarea" cols="30" rows="15"> </textarea>
-        <h3>Ningún mensaje fue encontrado</h3>
-        <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-      </section>
-    </main>
-
-    <!-- Footer content -->
-
-    <footer>
-      <span> Nicolás Vega &copy; 2023 </span>
-      <a href="https://www.linkedin.com/in/nicolas-vega-dev/" target="_blank"
-        ><figure><img src="vector/linkedin.svg" alt="logo LinkedIn" /></figure
-      ></a>
-      <a href="https://github.com/cNickV" target="_blank">
-        <figure><img src="vector/github.svg" alt="logo github" /></figure
-      ></a>
-    </footer>
 
     <script src="./scripts/app.js"></script>
   </body>
