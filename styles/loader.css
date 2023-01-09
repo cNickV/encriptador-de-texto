@@ -4,7 +4,6 @@ body {
 }
 
 .loader {
-    background-color: rgba(17, 17, 17, 0.034);
     width: 100%;
     height: 100vh;
     display: flex;
@@ -14,8 +13,7 @@ body {
 }
 
 .loader div {
-    background: rgba(255, 255, 255, 0.034);
-    width: 1.5rem;
+    width: 1.2rem;
     height: 4rem;
     margin-left: .8rem;
     animation: loader 1.2s infinite;
@@ -23,19 +21,19 @@ body {
 }
 
 .loader div:nth-child(1){
-    background:#134675;
+    background:#738557;
     animation-delay: -0.50s; 
     border-radius: 5px;
 }
 
 .loader div:nth-child(2){
-    background:#134675;
+    background:#738557;;
     animation-delay: -0.25s; 
     border-radius: 5px;
 }
 
 .loader div:nth-child(3){
-    background:#134675;
+    background:#738557;;
     animation-delay: 0s; 
     border-radius: 5px;
 }
