@@ -33,6 +33,7 @@ body {
     color: var(--green-color);
     font-size: 1.1rem;
     font-weight: bolder;
+    text-decoration: none;
 }
 
 /* Main Styles */
@@ -144,7 +145,8 @@ body {
     font-size:.8rem;
     padding: 1rem 0;
     position: relative;
-    left: 70px;
+    right: 15px;
+    
 }
 
 .footer__list {
@@ -158,13 +160,22 @@ body {
 }
 
 .footer__item--left {
-    position: relative;
-    left: 45px;
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    left: 211px;
+    bottom: 11px;
+
 }
 
 .footer__item--right {
-    position: relative;
-    left:-20px;
+    max-width: 1rem;
+    max-height: .5rem;
+    position: absolute;
+    right: 120px;
+    bottom: 27px;
+    
+    
 }
 
 /* Media Queries */
