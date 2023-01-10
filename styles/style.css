@@ -97,7 +97,7 @@ textarea::placeholder {
     width: 50%;
     font-size: .8rem;
     position: absolute;
-    bottom: 35px;
+    bottom: 22px;
     text-align: center;
 }
 
@@ -152,7 +152,6 @@ textarea::placeholder {
 }
 
 .container__btn--copy{
-  
     position: absolute;
     top: 130px;
     left: 130px;
@@ -167,8 +166,6 @@ textarea::placeholder {
     gap: 1rem;
     position: relative;
     bottom: 40px;
-   
-   
 }
 
 .btn-encriptar {
@@ -202,20 +199,18 @@ textarea::placeholder {
     font-size:.8rem;
     padding: 1rem 0;
     position: relative;
-    right: 30px;
+    right: 15px;
 }
 
 .footer__list {
     padding: 0;
     display: flex;
     position: relative;
-    right: 60px;
+    right: 45px;
     bottom: 13px;
-
-    
 }
 
-.footer__item--left {
+.footer__item{
     width: 1.5rem;
     height: 1.5rem;
 }
@@ -223,7 +218,6 @@ textarea::placeholder {
 .footer__item--right {
     max-width: 1rem;
     max-height: .5rem;
- 
 }
 
 
