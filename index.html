@@ -35,12 +35,14 @@
       <main class="main">
         <!-- Left column -->
         <section class="main__section main__section--left">
-          <textarea name="input__text" class="main__section__textarea" cols="30" rows="15"> </textarea>
+          <textarea name="input__text" class="main__section__textarea" cols="34" rows="15" readonly> </textarea>
           <div class="main_warning">
             <h3>Ningún mensaje fue encontrado</h3>
             <p>Ingresa el texto que desees encriptar o desencriptar.</p>
           </div>
-          <button class="btn-textarea btn-copiar">Copiar</button>
+          <div class="container__btn--copy">
+            <button class="btn-textarea btn-copiar">Copiar</button>
+          </div>
         </section>
 
         <!-- Right column -->
@@ -51,8 +53,7 @@
             cols="30"
             rows="15"
             placeholder="Escriba o peque aquí su texto"
-          >
-          </textarea>
+          ></textarea>
 
           <!-- Alert -->
           <div class="main__section__alert">
@@ -63,7 +64,7 @@
           </div>
         </section>
 
-        <section class="main__section container__btns">
+        <section class="container__btn--element">
           <button class="btn-textarea btn-encriptar">Encriptar</button>
           <button class="btn-textarea btn-desencriptar">Desencriptar</button>
         </section>
