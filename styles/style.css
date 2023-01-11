@@ -95,9 +95,9 @@ textarea::placeholder {
 
 .main_warning {
     width: 50%;
-    font-size: .8rem;
+    font-size: 0.8rem;
     position: absolute;
-    bottom: 22px;
+    bottom: 20;
     text-align: center;
 }
 
@@ -185,8 +185,6 @@ textarea::placeholder {
 /* Footer Styles */
 .footer {
     width: 100%;
-    position: fixed;
-    bottom: 0;
     color: var(--green-color);
 }
 
@@ -201,14 +199,14 @@ textarea::placeholder {
     font-size:.8rem;
     padding: 1rem 0;
     position: relative;
-    right: 30px;
+    right: 5px;
 }
 
 .footer__list {
     padding: 0;
     display: flex;
     position: relative;
-    right: 65px;
+    right: 40px;
     bottom: 13px;
 }
 
@@ -226,12 +224,34 @@ textarea::placeholder {
 
 /* Media Queries */
 
-/* 
 
-@media (max-width: 768px){
-    .container__grid {
-        background-color: var(--green-color);
+
+@media (min-width: 768px){
+    .main {
+        width: 100%;
+        display: flex;
     }
-}
 
-*/
+    .main__section--left {
+        max-width: 500px;
+        order: 2;
+        margin: 1rem 0;
+
+    }
+
+    .main__section--right textarea{
+        width: 277px;
+    } 
+
+    .main__section--right {
+        margin: 1rem 0;
+        max-width: 500px;
+    }
+    
+    .main__section--right textarea{
+        
+    } 
+    
+
+    
+}
