@@ -143,6 +143,7 @@ textarea::placeholder {
 .btn-textarea{
     max-width: 100px;
     font-weight: bold;
+    margin: 0 auto;
     padding:  1rem;
     border-radius: 10px;
     border: 0px solid #000;
@@ -183,12 +184,13 @@ textarea::placeholder {
 
 /* Footer Styles */
 .footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
     color: var(--green-color);
 }
 
 .footer__container {
-    width: 100%;
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -199,14 +201,14 @@ textarea::placeholder {
     font-size:.8rem;
     padding: 1rem 0;
     position: relative;
-    right: 15px;
+    right: 30px;
 }
 
 .footer__list {
     padding: 0;
     display: flex;
     position: relative;
-    right: 45px;
+    right: 65px;
     bottom: 13px;
 }
 
