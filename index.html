@@ -9,9 +9,6 @@
     <link rel="stylesheet" href="./styles/loader.css" />
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" href="vector/favicon.svg" />
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,100&display=swap");
-    </style>
   </head>
   <body>
     <div class="container">
@@ -36,9 +33,9 @@
         <!-- Left column -->
         <section class="main__section main__section--right">
           <textarea name="input__text" class="main__section__textarea" cols="35" rows="15" readonly></textarea>
-          <div class="section__right--alert">
-            <h3>Ningún mensaje fue encontrado</h3>
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          <div class="main__alert main__alert--right">
+            <h3 class="main__alert__heading">Ningún mensaje fue encontrado</h3>
+            <p class="main__alert__text">Ingresa el texto que desees encriptar o desencriptar.</p>
           </div>
           <div class="container__btn--copy">
             <button class="main__btn btn-copiar">Copiar</button>
@@ -56,7 +53,7 @@
           ></textarea>
 
           <!-- Alert -->
-          <div class="section__left--alert">
+          <div class="main__alert main__alert--left">
             <figure class="figure__icon">
               <img src="vector/alert.svg" alt="Simbolo de alerta" />
             </figure>
@@ -72,15 +69,16 @@
 
       <!-- Footer content -->
 
+        <!-- Footer content -->
       <footer class="footer">
         <h3 class="footer__copyright">Nicolás Vega &copy; 2023 |</h3>
         <a href="https://www.linkedin.com/in/nicolas-vega-dev/" target="_blank" class="footer__link">
-          <figure class="figure__icon footer__link__icon">
+          <figure class="footer__link__icon">
             <img src="vector/linkedin.svg" alt="logo LinkedIn" />
           </figure>
         </a>
         <a href="https://github.com/cNickV" target="_blank" class="footer__link">
-          <figure class="figure__icon footer__link__icon">
+          <figure class="footer__link__icon">
             <img src="vector/github.svg" alt="logo github" />
           </figure>
         </a>
@@ -88,5 +86,5 @@
     </div>
 
     <script src="./scripts/app.js"></script>
-  </body>
+
 </html>
