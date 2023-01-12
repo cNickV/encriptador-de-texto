@@ -41,7 +41,7 @@ body {
 
 .main__section {
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
     margin: 0 auto;
     position: relative;
     display: flex;
@@ -74,7 +74,7 @@ body {
 }
 
 .main__section--right textarea{
-    max-height: 120px;
+    max-height: 150px;
     background-color: var(--green-color);
     border: .4rem solid var(--green-color);
     color: rgb(245, 244, 244);
@@ -97,7 +97,7 @@ textarea::placeholder {
     width: 50%;
     font-size: 0.8rem;
     position: absolute;
-    bottom: 20;
+    bottom: 20%;
     text-align: center;
 }
 
@@ -116,18 +116,13 @@ textarea::placeholder {
 }
 
 .main__section__alert .figure__icon{
-    width: .7rem;
-    height: .7rem;
-    position: relative;
-    right: 5px;
-    bottom: 1px;
-    display: flex;
-    padding: .1rem 0;
+    width: 3.5%;
+    height: 4%;
 }
 
 .main__section__alert p {
     position: relative;
-    left: -40px;
+    right: 10%;
     font-size: .7rem;
     font-weight: bold;
     color: var(--green-color);
@@ -146,7 +141,7 @@ textarea::placeholder {
     margin: 0 auto;
     padding:  1rem;
     border-radius: 10px;
-    border: 0px solid #000;
+    border: 0px solid #f16613;
     background-color: #f16613;
     color: var(--background-color);
     box-shadow: 6px 6px 15px 11px rgba(151.0015869140625,151.0015869140625,151.0015869140625,0.5);
@@ -154,8 +149,8 @@ textarea::placeholder {
 
 .container__btn--copy{
     position: absolute;
-    top: 130px;
-    left: 130px;
+    top: 110%;
+    left: 39%;
     /* display: none; */
 }
 
@@ -197,27 +192,23 @@ textarea::placeholder {
 
 .footer__copyright {
     font-size:.8rem;
-    padding: 1rem 0;
     position: relative;
-    right: 5px;
+    left: 20%;
 }
 
 .footer__list {
     padding: 0;
     display: flex;
-    position: relative;
-    right: 40px;
-    bottom: 13px;
+
 }
 
 .footer__item{
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 15%;
+    height: 50%;
 }
 
 .footer__item--right {
-    max-width: 1rem;
-    max-height: .5rem;
+    max-width: 0%;
 }
 
 
@@ -230,6 +221,8 @@ textarea::placeholder {
     .main {
         width: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .main__section--left {
