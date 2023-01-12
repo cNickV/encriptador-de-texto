@@ -25,38 +25,38 @@
       <!-- Header page -->
       <header class="header">
         <nav class="header__nav">
-          <a href="https://www.linkedin.com/in/nicolas-vega-dev/" target="_blank" class="header__nav__logo"
-            >Nicolas Vega.</a
-          >
+          <a href="https://www.linkedin.com/in/nicolas-vega-dev/" target="_blank" class="header__nav__logo">
+            Nicolas Vega.
+          </a>
         </nav>
       </header>
 
       <!-- Main content -->
       <main class="main">
         <!-- Left column -->
-        <section class="main__section main__section--left">
-          <textarea name="input__text" class="main__section__textarea" cols="34" rows="15" readonly> </textarea>
-          <div class="main_warning">
+        <section class="main__section main__section--right">
+          <textarea name="input__text" class="main__section__textarea" cols="35" rows="15" readonly></textarea>
+          <div class="section__right--alert">
             <h3>Ningún mensaje fue encontrado</h3>
             <p>Ingresa el texto que desees encriptar o desencriptar.</p>
           </div>
           <div class="container__btn--copy">
-            <button class="btn-textarea btn-copiar">Copiar</button>
+            <button class="main__btn btn-copiar">Copiar</button>
           </div>
         </section>
 
         <!-- Right column -->
-        <section class="main__section main__section--right">
+        <section class="main__section main__section--left">
           <textarea
             name="input__text"
             class="main__section__textarea"
-            cols="30"
+            cols="35"
             rows="15"
             placeholder="Escriba o pegue aquí su texto."
           ></textarea>
 
           <!-- Alert -->
-          <div class="main__section__alert">
+          <div class="section__left--alert">
             <figure class="figure__icon">
               <img src="vector/alert.svg" alt="Simbolo de alerta" />
             </figure>
@@ -64,36 +64,26 @@
           </div>
         </section>
 
-        <section class="container__btn--element">
-          <button class="btn-textarea btn-encriptar">Encriptar</button>
-          <button class="btn-textarea btn-desencriptar">Desencriptar</button>
+        <section class="main__section container__btns">
+          <button class="main__btn btn-encriptar">Encriptar</button>
+          <button class="main__btn btn-desencriptar">Desencriptar</button>
         </section>
       </main>
 
       <!-- Footer content -->
 
       <footer class="footer">
-        <div class="footer__container">
-          <h3 class="footer__copyright">Nicolás Vega &copy; 2023 |</h3>
-
-          <ul class="footer__list">
-            <li class="footer__item footer__item--left">
-              <a href="https://www.linkedin.com/in/nicolas-vega-dev/" target="_blank" class="footer__link">
-                <figure class="figure__icon footer__link__icon">
-                  <img src="vector/linkedin.svg" alt="logo LinkedIn" />
-                </figure>
-              </a>
-            </li>
-
-            <li class="footer__item footer__item--right">
-              <a href="https://github.com/cNickV" target="_blank" class="footer__link">
-                <figure class="figure__icon footer__link__icon">
-                  <img src="vector/github.svg" alt="logo github" />
-                </figure>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <h3 class="footer__copyright">Nicolás Vega &copy; 2023 |</h3>
+        <a href="https://www.linkedin.com/in/nicolas-vega-dev/" target="_blank" class="footer__link">
+          <figure class="figure__icon footer__link__icon">
+            <img src="vector/linkedin.svg" alt="logo LinkedIn" />
+          </figure>
+        </a>
+        <a href="https://github.com/cNickV" target="_blank" class="footer__link">
+          <figure class="figure__icon footer__link__icon">
+            <img src="vector/github.svg" alt="logo github" />
+          </figure>
+        </a>
       </footer>
     </div>
 
