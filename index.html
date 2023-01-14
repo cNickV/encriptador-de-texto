@@ -29,9 +29,9 @@
 
       <header class="header">
         <nav class="header__nav">
-          <a href="https://www.linkedin.com/in/nicolas-vega-dev/" target="_blank" class="header__nav__logo">
-            Nicolas Vega.
-          </a>
+          <h1 >
+            Encriptador de Texto.
+          </h1>
         </nav>
       </header>
 
@@ -39,25 +39,29 @@
 
       <main class="main">
 
-        <!-- Left column -->
-
-        <section class="main__section main__section--right">
-          <textarea name="input__text" class="main__section__textarea" cols="35" rows="15" readonly></textarea>
-          <div class="main__alert main__alert--right">
-            <h3 class="main__alert__heading">Ningún mensaje fue encontrado</h3>
-            <p class="main__alert__text">Ingresa el texto que desees encriptar o desencriptar.</p>
-          </div>
-          <div class="container__btn--copy">
-            <button class="main__btn btn-copiar">Copiar</button>
-          </div>
-        </section>
-
         <!-- Right column -->
-
-        <section class="main__section main__section--left">
+        
+        <section class="main__section--right">
+          
+          <div class="main__right--elements">
+            <textarea class="right__section--textarea" name="input__text"  cols="35" rows="15" readonly></textarea>
+            <h3 class="right__alert--title">Ningún mensaje fue encontrado</h3>
+            <p class="right__alert--text">Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          
+          
+          <div class="main__right--btns">
+            <button class="right__btn">Copiar</button>
+          </div>
+          
+        </section>
+        
+        <!-- Left column -->
+        
+        <section class="main__section--left">
           <textarea
             name="input__text"
-            class="main__section__textarea"
+            class="main__section__textarea2"
             cols="35"
             rows="15"
             placeholder="Escriba o pegue aquí su texto."
@@ -66,15 +70,15 @@
           <!-- Alert -->
 
           <div class="main__alert main__alert--left">
-            <figure class="figure__icon">
-              <img src="vector/alert.svg" alt="Simbolo de alerta" />
+            <figure >
+              <img  class="alert__icon" src="vector/alert.svg" alt="Simbolo de alerta" />
             </figure>
-            <p>Solo letras minúsculas y sin acentos</p>
+            <p class="alert__text">Solo letras minúsculas y sin acentos</p>
           </div>
 
         </section>
 
-        <section class="main__section container__btns">
+        <section class="main__section--btns">
           <button class="main__btn btn-encriptar">Encriptar</button>
           <button class="main__btn btn-desencriptar">Desencriptar</button>
         </section>
