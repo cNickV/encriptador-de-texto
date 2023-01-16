@@ -233,6 +233,8 @@ body{
 }
 
 .footer__copyright {
+    position: relative;
+    left: 5%;
     color: var(--green-color);
 }
 
@@ -240,24 +242,47 @@ body{
     width: 40%
 }
 
-.footer__link__icon--linkedin {
+.footer__link__icon--linkedIn {
     position: relative;
-    left: 30%;
+    left: 50%;
 }
 
 .footer__link__icon--github{
+    position: relative;
+    left: 15%;
     z-index: 100;
 }
 
 
-
-/* 
-
-
-
-
 /* Media Queries */
 
-/* 
-@media (min-width: 768px){ } 
-*/
+
+
+@media (min-width: 768px){
+    .alert__icon {
+        width: 4%;
+        position: relative;
+        left: 28%;
+    }
+
+    .footer {
+        padding-top: 3rem; 
+    }
+
+    .footer__copyright {
+        position: relative;
+        left: 5%;
+    }
+    
+    .footer__link__icon--linkedIn {
+        position: relative;
+        left: 70%;
+    }
+    
+    .footer__link__icon--github{
+        position: relative;
+        left: 20%;
+        z-index: 100;
+    }
+
+ } 
