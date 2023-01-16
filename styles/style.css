@@ -33,6 +33,7 @@ body{
 }
 
 /* Header Styles */
+
 .header {
     grid-area: "header";
     width: 100%;
@@ -140,7 +141,6 @@ body{
     width: 80%;
     margin: 0 auto;
     display: grid;
-    grid-area: ;
 }
     
 .main__section__textarea2 {
