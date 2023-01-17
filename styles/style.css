@@ -91,7 +91,6 @@ body{
     grid-column: 1/4;
     grid-row: 1/3;
     color: #000;
-
     font-size: 1.3rem;
     font-weight: lighter;
     letter-spacing: .1rem;
@@ -118,6 +117,10 @@ body{
     padding: 5px;
     font-weight: bold;
     color: var(--green-color);
+}
+
+.right__alert--show {
+    display: none;
 }
 
 .main__right--btns {
