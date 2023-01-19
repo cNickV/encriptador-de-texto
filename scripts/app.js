@@ -46,6 +46,14 @@ function checkRightLeft() {
 
 setInterval(checkRightLeft, 100);
 
+/* Copy btn */
+
+copyBtn.addEventListener("click", () => {
+  if (textareaRight.value !== "" && textareaLeft.value.length === 0) {
+    alert("se copio");
+  }
+});
+
 /* funcionalidad encriptar */
 
 encriptar.addEventListener("click", () => {
