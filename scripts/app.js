@@ -46,7 +46,7 @@ function checkRightLeft() {
 
 setInterval(checkRightLeft, 100);
 
-/* Copy btn */
+/* funcionalidad Copy*/
 
 copyBtn.addEventListener("click", () => {
   if (textareaRight.value !== "" && textareaLeft.value.length === 0) {
