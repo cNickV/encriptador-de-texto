@@ -50,7 +50,8 @@ setInterval(checkRightLeft, 100);
 
 copyBtn.addEventListener("click", () => {
   if (textareaRight.value !== "" && textareaLeft.value.length === 0) {
-    alert("se copio");
+    textareaRight.select();
+    document.execCommand("copy");
   }
 });
 

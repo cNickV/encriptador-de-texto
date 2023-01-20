@@ -141,7 +141,10 @@ body{
     border: 0px solid var(--orange-color);
     background-color: var(--orange-color);
     box-shadow: 6px 6px 15px 11px rgba(151.0015869140625,151.0015869140625,151.0015869140625,0.5);
+    cursor: pointer;
 }
+
+
 
 /* Style section left */
 
@@ -223,6 +226,7 @@ body{
     border: 0px solid var(--orange-color);
     background-color: var(--orange-color);
     box-shadow: 6px 6px 15px 11px rgba(151.0015869140625,151.0015869140625,151.0015869140625,0.5);
+    cursor: pointer;
 }
 
 .btn-desencriptar {
