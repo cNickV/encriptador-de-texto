@@ -55,6 +55,13 @@ copyBtn.addEventListener("click", () => {
   }
 });
 
+textareaRight.addEventListener("keydown", (event) => {
+  if (event.ctrlKey && event.code === "KeyC") {
+    textareaRight.select();
+    document.execCommand("copy");
+  }
+});
+
 /* funcionalidad encriptar */
 
 encriptar.addEventListener("click", () => {
