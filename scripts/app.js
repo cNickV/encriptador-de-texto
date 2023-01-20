@@ -37,7 +37,7 @@ function checkRightLeft() {
     alertTitle.classList.toggle("right__alert--show");
     alertText.classList.toggle("right__alert--show");
     showAlert = false;
-  } else if (textareaRight.value === "" || textareaLeft.value.length !== 0) {
+  } else if (textareaRight.value === "" && textareaLeft.value.length !== 0) {
     alertTitle.classList.remove("right__alert--show");
     alertText.classList.remove("right__alert--show");
     showAlert = true;
@@ -51,14 +51,14 @@ setInterval(checkRightLeft, 100);
 copyBtn.addEventListener("click", () => {
   if (textareaRight.value !== "" && textareaLeft.value.length === 0) {
     textareaRight.select();
-    document.execCommand("copy");
+    navigator.clipboard.writeText(textareaRight.value);
   }
 });
 
 textareaRight.addEventListener("keydown", (event) => {
   if (event.ctrlKey && event.code === "KeyC") {
     textareaRight.select();
-    document.execCommand("copy");
+    navigator.clipboard.writeText(textareaRight.value);
   }
 });
 
