@@ -3,7 +3,7 @@
 /* Custom Properties*/
 
 :root{
-    --background-color: #c7c7c7;
+    --background-color: #e7e7e7;
     --brown-color: #796752;
     --green-color: #738557;
     --orange-color: #F16613;
@@ -189,6 +189,7 @@ body{
     justify-content: center;
 }
 
+
 .alert__icon {
     width: 1.3rem;
     position: relative;
@@ -203,6 +204,12 @@ body{
     text-align: center;
     color: var(--green-color);
 }
+
+.main__alert--show {
+   transform:  rotateX('angle');
+
+}
+
 
 /* Buttons */
 

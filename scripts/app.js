@@ -62,6 +62,14 @@ textareaRight.addEventListener("keydown", (event) => {
   }
 });
 
+/* Alert - se remplazan todas las letras por minúsculas */
+textareaLeft.addEventListener("input", (event) => {
+  event.target.value = event.target.value
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
+});
+
 /* funcionalidad encriptar */
 
 encriptar.addEventListener("click", () => {
