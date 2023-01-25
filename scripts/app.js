@@ -19,7 +19,6 @@ const copyBtn = document.querySelector(".right__btn");
 
 /* Left */
 const textareaLeft = document.querySelector(".main__section__textarea2");
-const sendButton = document.querySelector(".btn-encriptar");
 const encriptar = document.querySelector(".btn-encriptar");
 const desEncriptar = document.querySelector(".btn-desencriptar");
 
@@ -73,7 +72,20 @@ textareaLeft.addEventListener("input", (event) => {
 /* funcionalidad encriptar */
 
 encriptar.addEventListener("click", () => {
-  textareaRight.value = textareaLeft.value;
+  textareaRight.value = textareaLeft.value.replace(/e|i|a|o|u/gi, (match) => {
+    switch (match) {
+      case "e":
+        return "enter";
+      case "i":
+        return "imes";
+      case "a":
+        return "ai";
+      case "o":
+        return "ober";
+      case "u":
+        return "ufat";
+    }
+  });
   textareaLeft.value = "";
   showText();
 });
@@ -81,7 +93,18 @@ encriptar.addEventListener("click", () => {
 /* funcionalidad desencriptar */
 
 desEncriptar.addEventListener("click", () => {
-  textareaRight.value = textareaLeft.value;
+  textareaLeft.value = textareaRight.value.replace(/imes|ai|ober|ufat/gi, (match) => {
+    switch (match) {
+      case "imes":
+        return "i";
+      case "ai":
+        return "a";
+      case "ober":
+        return "o";
+      case "ufat":
+        return "u";
+    }
+  });
   textareaLeft.value = "";
   showText();
 });
