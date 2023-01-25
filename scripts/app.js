@@ -93,7 +93,7 @@ encriptar.addEventListener("click", () => {
 /* funcionalidad desencriptar */
 
 desEncriptar.addEventListener("click", () => {
-  textareaLeft.value = textareaRight.value.replace(/imes|ai|ober|ufat/gi, (match) => {
+  textareaRight.value = textareaLeft.value.replace(/imes|ai|ober|ufat/gi, (match) => {
     switch (match) {
       case "imes":
         return "i";
